@@ -1,4 +1,4 @@
-<img src="/ycoady/UVic-Distributed-Systems/master/logoDS.png" alt="Alt text" style="max-width:100%;"></a></p>UVic-Distributed-Systems
+<a href="/ycoady/UVic-Distributed-Systems/blob/master/logoDS.png" target="_blank"><img src="/ycoady/UVic-Distributed-Systems/blob/master/logoDS.png" alt="Alt text" style="max-width:100%;"></a></p>UVic-Distributed-Systems
 ========================
 
 <a href = "https://www.csc.uvic.ca/">UVic Dept of Computer Science</a>
