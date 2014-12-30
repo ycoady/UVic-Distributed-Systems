@@ -6,4 +6,27 @@ CSC 462/562 Spring 2015!</b>
 
 Welcome to our extravaganza in building cool systems that involve multiple computational devices, CSC 462/562 Distributed Computing.  This course is for fearless 4th year <a href = "http://courses.seng.uvic.ca/courses/2012/fall/csc/462">undergrads</a> and <a href = "http://courses.seng.uvic.ca/courses/2012/fall/csc/562">grads</a>.  
 
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Topics</th>
+<th>Homework</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jan 5</td>
+<td>Intro and basics of <a href="http://www.hpcs.cs.tsukuba.ac.jp/~tatebe/lecture/h23/dsys/dsd-tutorial.html">Distributed Systems</a>
+</td>
+<td>Exercises</td>
+</tr>
+<tr>
+<td>Jan 8</td>
+<td>Intro to <a href="http://dl.acm.org/citation.cfm?id=2080.357392">RPC</a>: the mechanics</td>
+<td>Post advantages and disadvantages.</td>
+</tr>
+<tr>
+</tbody>
+</table>
 Our first adventure will be to work through the overview originally provided by <a href="http://www.hpcs.cs.tsukuba.ac.jp/~tatebe/lecture/h23/dsys/dsd-tutorial.html">"Google Code University"</a>.  This gives a birds-eye view of some of the advantages of using a distributed system, basic elements involved, how one is built, remote procedure calls, and design principles.
