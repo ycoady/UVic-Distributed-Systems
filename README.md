@@ -23,7 +23,9 @@ Welcome to our extravaganza in building cool systems that involve multiple compu
 </tr>
 <tr>
 <td>Jan 8</td>
-<td>Intro to <a href="http://dl.acm.org/citation.cfm?id=2080.357392">RPC</a>: the mechanics</td>
+<td>
+Intro to <a href="http://dl.acm.org/citation.cfm?id=2080.357392">RPC</a> and Lab 1
+</td>
 <td>Post advantages and disadvantages.</td>
 </tr>
 <tr>
