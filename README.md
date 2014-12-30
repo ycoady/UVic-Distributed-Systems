@@ -29,4 +29,4 @@ Welcome to our extravaganza in building cool systems that involve multiple compu
 <tr>
 </tbody>
 </table>
-Our first adventure will be to work through the overview originally provided by <a href="http://www.hpcs.cs.tsukuba.ac.jp/~tatebe/lecture/h23/dsys/dsd-tutorial.html">"Google Code University"</a>.  This gives a birds-eye view of some of the advantages of using a distributed system, basic elements involved, how one is built, remote procedure calls, and design principles.
+
