@@ -4,7 +4,7 @@
 <b><a href = "https://www.csc.uvic.ca/">UVic Dept of Computer Science</a>
 CSC 462/562 Spring 2015!</b>
 
-Welcome to our extravaganza in building cool systems that involve multiple computational devices, CSC 462/562 Distributed Computing.  This course is for fearless 4th year <a href = "http://courses.seng.uvic.ca/courses/2012/fall/csc/462">undergrads</a> and <a href = "http://courses.seng.uvic.ca/courses/2012/fall/csc/562">grads</a>.  
+Welcome to our extravaganza in building cool systems that involve multiple computational devices, CSC 462/562 Distributed Computing.  This course is for fearless 4th year <a href = "http://courses.seng.uvic.ca/courses/2015/spring/csc/462">undergrads</a> and <a href = "http://courses.seng.uvic.ca/courses/2015/spring/csc/562">grads</a>.  
 
 <table>
 <thead>
