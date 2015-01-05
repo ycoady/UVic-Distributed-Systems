@@ -19,14 +19,14 @@ Welcome to our extravaganza in building cool systems that involve multiple compu
 <td>Jan 5</td>
 <td>Intro and basics of <a href="http://www.hpcs.cs.tsukuba.ac.jp/~tatebe/lecture/h23/dsys/dsd-tutorial.html">Distributed Systems</a>
 </td>
-<td>Exercises</td>
+<td>Exercises 3, 9, 11 (post!)</td>
 </tr>
 <tr>
 <td>Jan 8</td>
 <td>
 Intro to <a href="http://research.cs.wisc.edu/areas/os/Qual/papers/rpc.pdf">RPC</a>, <a href="http://pages.cs.wisc.edu/~akella/CS740/S08/740-Papers/MD88.pdf">DNS</a> and Lab 1
 </td>
-<td>Prepare for Lab</td>
+<td>Post comments and prepare for Lab</td>
 </tr>
 <tr>
 </tbody>
