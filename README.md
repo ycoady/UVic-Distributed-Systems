@@ -24,7 +24,7 @@ Welcome to our extravaganza in building cool systems that involve multiple compu
 <tr>
 <td>Jan 8</td>
 <td>
-Intro to <a href="http://dl.acm.org/citation.cfm?id=2080.357392">RPC</a> and Lab 1
+Intro to <a href="http://research.cs.wisc.edu/areas/os/Qual/papers/rpc.pdf">RPC</a> and Lab 1
 </td>
 <td>Prepare for Lab</td>
 </tr>
