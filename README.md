@@ -31,7 +31,7 @@ Intro to <a href="http://research.cs.wisc.edu/areas/os/Qual/papers/rpc.pdf">RPC<
 <tr>
 <td>Jan 12</td>
 <td>
-Intro to <a href="">Keys</a>, and Lab 1
+Intro to Keys and Lab 1
 </td>
 <td>Post comments for papers</td>
 </tr>
