@@ -1,0 +1,88 @@
+include math.repy
+include math_uvic.repy 
+include httpretrieve.repy
+
+# get geo-location record (by-passing unreliable seattle geoip API)
+def get_geoip_record (ip_address=""):
+    GEOIP_SRV_URL = 'http://www.geoplugin.net/json.gp'
+    
+    geoip_dict = {}
+    
+    #set some safe default values...
+    geoip_dict['city'] = "n/a"
+    geoip_dict['countryName'] = "n/a"
+    geoip_dict['latitude'] = 0.0
+    geoip_dict['longitude'] = 0.0
+    ret_val = geoip_dict
+
+
+    if ip_address != "":
+        querydata = "ip=" + ip_address
+
+
+    try:
+        geoip_json = httpretrieve_get_string(GEOIP_SRV_URL, querydata,        \
+                                             postdata=None, httpheaders=None, \
+                                             proxy=None, timeout=200);
+        if geoip_json != '':
+            geoip_lines = geoip_json.split("\n")
+            if (len(geoip_lines) >= 3):
+                geoip_dict = {}
+                geoip_lines = geoip_lines[1:-1]
+
+
+                for line in geoip_lines:
+                    key_val = line.split(":")
+                    key = key_val[0][13:-1]
+                    val = key_val[1].replace("\"","").replace(",","")
+                    #print key + " / " + val + "\n"
+                    if key == "latitude" or key == "longitude":
+                        geoip_dict[key] = float(val)
+                    else:
+                        geoip_dict[key] = val;
+        ret_val = geoip_dict
+    except:
+        ret_val = geoip_dict
+
+    return ret_val
+
+
+# check if geo-location is valid
+def location_is_valid (location):
+    if location != None and len(location) == 2:
+        try:
+            float(location[0])
+            float(location[1])
+            return True
+        except ValueError:
+            return False
+    else:
+        return False
+        
+
+# calculates gepraphic distance between IPs of a and b
+def geoip_distance (ip_a, ip_b):
+    location_rec = get_geoip_record(ip_a)
+    lat_a = location_rec['latitude']
+    long_a = location_rec['longitude']
+    if not location_is_valid([lat_a, long_a]):
+        return -1.0
+    
+    location_rec = get_geoip_record(ip_b)
+    lat_b = location_rec['latitude']
+    long_b = location_rec['longitude']
+    if not location_is_valid([lat_b, long_b]):
+        return -1.0
+
+    earth_radius = 6371.0
+
+    diff_lat = lat_b - lat_a
+    diff_long = long_b - long_a
+    tmp = math_sin (diff_lat / 2) * math_sin (diff_lat / 2) \
+        + math_cos ((lat_a)) \
+        * math_cos ((lat_b)) * math_sin (diff_long / 2) \
+        * math_sin (diff_long / 2)
+
+    c_in_rad = 2 * math_atan2 (math_sqrt2 (tmp), math_sqrt2 (1 - tmp))
+    return earth_radius * c_in_rad
+    
