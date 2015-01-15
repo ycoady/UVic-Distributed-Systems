@@ -1,0 +1,22 @@
+HOMEWORK
+========
+
+FILES
+=====
+geoip_uvic.repy - seattle code calculating the distance between two IPs
+math_uvic.repy  - math routines needed
+dist_demo.py    - demo of how to calculate the distance between two IPs
+
+
+DUE
+===
+To be completed in the lab OR to be demonstrated at the beginning of the next lab.
+
+INSTRUCTIONS
+============
+Modify the "allpairsping.py" you used in this lab such that,
+
+ - the latency matrix includes the geographical distance in kilometers 
+   for each seattle node pair.
+
+

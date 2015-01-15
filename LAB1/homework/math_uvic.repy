@@ -1,0 +1,99 @@
+# calculate x^2
+def square (x):
+  return x * x
+
+
+# calculate average of a and b
+def average (a, b):
+    return (a + b) / 2.0
+
+
+# mean square between a and b
+def mean_square (a, b):
+    return average (square(a), square(b))
+
+
+# computes Newton's square root approximation
+def math_sqrt2 (x):
+    def is_good_enough (guess):
+        return abs (square (guess) - x) < 0.0000001
+
+    def improve (guess):
+        return average (guess, x/guess)
+
+    def sqrt_iter (guess):
+        if is_good_enough (guess):
+            return guess
+        else:
+            return sqrt_iter (improve (guess))
+			
+    return sqrt_iter (1)
+
+
+# converts from degrees to radians
+def math_radians (x):
+    return (math_pi / 180) * x
+
+
+# computes factorial of n: n!
+def math_factorial (n):
+    if (n <= 1):
+        return 1
+    else:
+        return n * math_factorial (n-1)
+
+
+# computes maclaurin's series approximation for sin(x)
+def math_sin (x):
+    k = 100
+    first_value = 0.0
+    for i in xrange (1, k, 4):
+        next_value = math_radians(x) ** i / math_factorial (i)
+        first_value += next_value
+
+    for i in xrange (3, k, 4):
+        next_value = -1 * math_radians(x) ** i / math_factorial (i)
+        first_value += next_value
+
+
+    return first_value
+
+
+# computes maclaurin's series approximation for cos(x)
+def math_cos (x):
+    k = 100
+    first_value = 0.0
+
+    for i in xrange (0, k, 4):
+        next_value = math_radians (x) ** i / math_factorial (i)
+        first_value += next_value
+        
+    for i in xrange(2, k, 4):
+        next_value = -1 * math_radians (x) ** i / math_factorial (i)
+        first_value += next_value
+        
+    return first_value
+
+
+# calculates approximate arctan2 value
+def math_atan2 (y, x):
+    math_pi_div2 = 1.5707963
+    if (x == 0.0):
+        if (y > 0.0):
+            return math_pi_div2
+        if (y == 0.0):
+            return 0.0
+        return -math_pi_div2;
+    atan = 0.0
+    z = y / x
+    if abs (z < 1.0):
+        atan = z / (1.0 + 0.28 * z * z)
+        if (x < 0.0):
+            if ( y < 0.0):
+                return atan - math_pi;
+            return atan + math_pi;
+    else:
+        atan = math_pi_div2 - z / (z * z + 0.28)
+        if (y < 0.0):
+            return atan - math_pi;
+    return atan
