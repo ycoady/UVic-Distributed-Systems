@@ -35,6 +35,20 @@ Intro to Keys and Lab 1
 </td>
 <td>Post comments for papers</td>
 </tr>
+<tr>
+<td>Jan 15</td>
+<td>
+RPC versus LPC
+</td>
+<td>Post comments for papers</td>
+</tr>
+<tr>
+<td>Jan 19</td>
+<td>
+DNS and NTP
+</td>
+<td>Read <a href="http://web.stanford.edu/class/cs240/readings/lamport.pdf">Logical Clocks</a> and <a href="http://research.microsoft.com/en-us/um/people/lamport/pubs/chandy.pdf">Distributed Snapshots</a></td>
+</tr>
 </tbody>
 </table>
 
