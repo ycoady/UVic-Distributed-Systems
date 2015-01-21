@@ -1,0 +1,32 @@
+#
+# Create a new simulator object
+#
+set ns [new Simulator]
+
+#
+# Load in testbed-specific commands
+#
+source tb_compat.tcl
+
+#
+# Network topology, traffic specification, events
+#
+
+
+# Set up a server node (use same OS for client)
+set server [$ns node]
+tb-set-node-os $server CENTOS63-64-STD #<- YOU NEED TO MAKE A CHANGE HERE
+
+# Set up a server node.
+# We use the Fedora Core 15 Linux as the OS.
+# =========TO BE FILLED IN BY YOU ==========
+
+# Set up the link between server and client
+# the link is should be named bridge, it's full duplex, 100 Mb/s,
+# 20ms latency, 5% packet loss. 
+# (use DropTail for link, it specifies link properties under congestion)
+# =========TO BE FILLED IN BY YOU ==========
+
+
+# Begin the experiment (in NS, this would begin the simulation)
+$ns run

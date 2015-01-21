@@ -1,0 +1,117 @@
+EMULAB
+======
+Emulab has 888 nodes available and is designed for short duration experiments but can also be used as a development platform. You may allocate dedicated machines or VMs using a web interface. You can configure the nodes by specifying an OS (e.g., “UBUNTU14-64-STD” for Ubuntu 12.14) and network links/topology between the nodes. This is unlike Seattle where machines come with whatever OS is already installed on them and you only have access to a scripting engine to run a restricted subset of the python language. In Emulab you are not restricted to a specific language; you can log into the allocated machines via your private key or your Emulab account/password (username on your machines is the same as your Emulab user name). You may log in to each node, load any software you need, then run your experiment by running any scripts etc. you need on the various nodes. You have full root accesss via de sudo command.
+
+In Emulab, before passing the requested nodes to the user, an operating system image specified/created by the user is installed. This means that unlike in Seattle, users can do destructive work such as kernel modifications if a custom OS image is used. One may define complex network topologies and configurations within Emulab using ns-2 scripting which also allows the automatic configuration of multiple machines and switches according to custom experiment requirements.
+
+
+IMPORTANAT NOTICE:
+==================
+All modification done to an instantiation of an OS image on an Emulab node are lost after an experiment is swapped out. The Files in your home directory are kept though.
+
+
+USEFUL LINKS // GETTING STARTED
+===============================
+https://wiki.emulab.net/wiki/Emulab/wiki/Tutorial
+https://wiki.emulab.net/wiki/Emulab/wiki/AdvancedExample
+https://wiki.emulab.net/wiki/nscommands
+
+EXAMPLE NS2 FILE (ONE NODE)
+==========================
+#
+# Create a new simulator object
+#
+set ns [new Simulator]
+
+#
+# Load in testbed-specific commands
+#
+source tb_compat.tcl
+
+#
+# Network topology, traffic specification, events
+#
+
+
+# Set up a server node (use same OS for client)
+set server [$ns node]
+tb-set-node-os $server CENTOS63-64-STD #<- YOU NEED TO MAKE A CHANGE HERE
+
+# Set up a server node.
+# We use the Fedora Core 15 Linux as the OS.
+# =========TO BE FILLED IN BY YOU ==========
+
+# Set up the link between server and client
+# the link is should be named bridge, it's full duplex, 100 Mb/s,
+# 20ms latency, 5% packet loss. 
+# (use DropTail for link, it specifies link properties under congestion)
+# =========TO BE FILLED IN BY YOU ==========
+
+
+# Begin the experiment (in NS, this would begin the simulation)
+$ns run
+
+END EXAMPLE
+===========
+
+
+
+LAB #2
+======
+
+1. SETUP YOUR EXPERIMENT
+========================
+ - Modify the above ns-2 file to use only "32 bit Fedora 15 standard"
+   OS image instead of the 64 bit CENTOS63-64-STD image.
+   
+ - Add a node called "client" with Fedora 15 standard
+ 
+ - Add a duplex network link called  "bridge" connecting server and client node.
+   Use the following settings for the bride:
+   linkspeed      : 100Mbps
+   latency        : 10ms
+   packetloss rate: 0.0001
+
+
+2. MEASURING THE EFFECTS OF PACKETLOSS & LATENCY ON BANDWIDTH
+=============================================================
+For each combination of link packetloss rate (PLR) and latency (L) do:
+PLR = [0.001, 0.05, 0.1]
+L = [1ms, 10ms, 50ms, 100ms] 
+
+1) In a table take note of the round-trip ping time (RTT) and ping's estimated packetloss.
+   Why do you see the results you are seeing?
+   Were these results what you expected? and if so why?
+
+2) On your server node run the command:
+      /usr/local/etc/emulab/emulab-iperf -s
+	  
+   On your client node run the command:
+      /usr/local/etc/emulab/emulab-iperf -c server -f k -i 60 -t 60
+   
+   - What do the above commands do? (HINT: run emulab-iperf --help)
+   - Use the emulab-iperf commands above to examine how the throughput of your
+     link changes as you change latency and packetloss rate.
+	 
+   - For the packetloss rates (PLR) of 0% and 10% plot the average link throughput
+     vs. the latencies = [1ms, 10ms, 50ms, 100ms]. E.g. make a plot for each PLR.
+
+HELPFUL COMMANDS
+================
+In "ns" script:
+    $link0 bandwidth 10Mb duplex
+    $link0 delay 10ms
+    $link0 plr 0.05
+With "tevc":
+    tevc ... link_name modify bandwidth=20000   # In kbits/second; 20000 = 20Mbps
+    tevc ... link_name modify delay=10ms        # In msecs (the "ms" is ignored)
+    tevc ... link_name modify plr=0.05          # packet loss rate; 0.05 = 5% loss
+Both:
+    $link_name up
+    $link_name down
+	
+MODIFY LINK SPEED AT RUNTIME
+============================
+/usr/testbed/bin/tevc -e vikelab/apache-loss-latency now bridge modify bandwidth=100000
+/usr/testbed/bin/tevc -e vikelab/apache-loss-latency now bridge modify delay=30ms
+/usr/testbed/bin/tevc -e vikelab/apache-loss-latency now bridge modify plr=0.05
