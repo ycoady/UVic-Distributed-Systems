@@ -8,4 +8,3 @@ This is a *very* classic exercise for all students, everywhere, learning about d
 
 
 
-Use RPC to coordinate replica processes for two-phase commit for a durable key-value store.
