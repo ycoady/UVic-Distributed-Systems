@@ -1,4 +1,5 @@
 ## Project Idea: RPC and Two-Phase Commit!
+### Due Feb 23, work in groups of 2-3.
 
 This is a *very* classic exercise for all students, everywhere, learning about distributed systems!  It is a great thought exercise, and will use things we are/will be talking about in the course.  It has 3 pieces:
 
@@ -20,7 +21,7 @@ in a way that is "durable": if your process quits and is restarted, all values t
 
 It is great that your key/value store is durable, but now your job is to replicate it by using a single *coordinator* process with multiple *replica* processes.  
 
-The *coordinator* process should use RPC for the 3 operations (put, del, get).  Any state changing operations (put, del), should use two-phase commit to coordinate the operation between replicas.  Operations that preserve state (get), can just be sent to a replica at random.  Multiple clients should be able to connect to the coordinator and issue requests concurrently. 
+The *coordinator* process should use RPC (use a library for this too, you could write your own but you don't have to!) for the 3 operations (put, del, get).  Any state changing operations (put, del), should use two-phase commit to coordinate the operation between replicas.  Operations that preserve state (get), can just be sent to a replica at random.  Multiple clients should be able to connect to the coordinator and issue requests concurrently. 
 
 The *replicas* should each be an instance of your durable key/value store, and expose an RPC interface for the coordinator to interact with them.  Operations should be allowed to execute concurrently.  To keep it simple, assume that if two or more operations manipulate the same key, the first to arrive should be able to proceed while the others should not be able to commit.
 
