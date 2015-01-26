@@ -1,5 +1,5 @@
 ## Project Idea: RPC and Two-Phase Commit!
-### Due Feb 23, work in groups of 2-3.
+#### Due Feb 23, work in groups of 2-3.
 
 This is a *very* classic exercise for all students, everywhere, learning about distributed systems!  It is a great thought exercise, and will use things we are/will be talking about in the course.  It has 3 pieces:
 
