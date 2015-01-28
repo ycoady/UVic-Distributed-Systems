@@ -19,3 +19,5 @@
 9. Writing a [curl] (http://curl.haxx.se/docs/manpage.html) command to send slicename, private_ip, public_ip, hostname, lat, long to the Lively server Rick will set up
 
 10. Writing a Fabric command to do this in parallel on all the nodes
+
+Details [here!] (https://docs.google.com/a/us-ignite.org/document/d/18hUrCyJvJ2xBqh5z6xFVNERnV8tcsB2HHhq3wtR6Uj8/edit?usp=sharing)
