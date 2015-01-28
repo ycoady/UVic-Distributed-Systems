@@ -20,4 +20,4 @@
 
 10. Writing a Fabric command to do this in parallel on all the nodes
 
-Details [here!] (https://docs.google.com/a/us-ignite.org/document/d/18hUrCyJvJ2xBqh5z6xFVNERnV8tcsB2HHhq3wtR6Uj8/edit?usp=sharing)
+Details [here!] (https://docs.google.com/a/us-ignite.org/document/d/18hUrCyJvJ2xBqh5z6xFVNERnV8tcsB2HHhq3wtR6Uj8/pub)
