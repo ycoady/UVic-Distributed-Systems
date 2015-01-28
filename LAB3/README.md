@@ -1,0 +1,21 @@
+## *"Hello GEE!"* in 10 easy steps by:
+
+1. Allocating yourself a slicelet
+
+2. Writing a script to install the necessary software (geoip-bin and wget), and a geoIP database [http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat]
+
+3. Writing a script to make sure everything installed correctly
+
+4. Putting both scripts on the nodes using the fabric 'put' command
+
+5. Using fabric with a parallel decorator to run the install and check scripts
+
+6. Writing a script to get the local IP address out of ifconfig
+
+7. Extending the script to get the host IP address as well
+
+8. Using that IP address to get the lat long of the server
+
+9. Writing a curl command to send slicename, private_ip, public_ip, hostname, lat, long to the lively server Rick will set up
+
+10. Writing a fabric command to do this in parallel on all the node
