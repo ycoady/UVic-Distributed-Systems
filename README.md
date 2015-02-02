@@ -14,3 +14,4 @@ Jan 15  | RPC versus LPC    | Post comments for papers
 Jan 19  | DNS and NTP       | Read [Logical Clocks](http://web.stanford.edu/class/cs240/readings/lamport.pdf) and [Distributed Snapshots](http://research.microsoft.com/en-us/um/people/lamport/pubs/chandy.pdf)
 Jan 22  | Intro to Logical Clocks       | Post comments on Logical Clocks
 Jan 26  | Intro GEE (Rick)              | Post comments on Distributed Snapshots, Read [Two Phase Commit (Chapter 7, up to 7.5) ](http://research.microsoft.com/en-us/people/philbe/chapter7.pdf)
+Jan 29  | Overlay Networks (Rick)       | Update on [Portal Crash] ()
