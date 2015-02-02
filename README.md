@@ -9,9 +9,10 @@ Welcome to our extravaganza in building cool systems that involve multiple compu
  :-----:| ----------------- | -----
 Jan 5   | Intro and basics of Distributed Systems | Read [Tutorial](http://www.hpcs.cs.tsukuba.ac.jp/~tatebe/lecture/h23/dsys/dsd-tutorial.html) and do exercises 3, 9, 11 (post to coursespaces!)
 Jan 8   | Intro to RPC, DNS |  Read [RPC](http://research.cs.wisc.edu/areas/os/Qual/papers/rpc.pdf), [DNS](http://pages.cs.wisc.edu/~akella/CS740/S08/740-Papers/MD88.pdf), Post comments and prepare for Lab
-Jan 12  | Intro to Keys and Lab 1 | Post comments for papers
+Jan 12  | Intro to Keys and [Lab 1] (https://github.com/ycoady/UVic-Distributed-Systems/tree/master/LAB1) | Post comments for papers
 Jan 15  | RPC versus LPC    | Post comments for papers
-Jan 19  | DNS and NTP       | Read [Logical Clocks](http://web.stanford.edu/class/cs240/readings/lamport.pdf) and [Distributed Snapshots](http://research.microsoft.com/en-us/um/people/lamport/pubs/chandy.pdf)
+Jan 19  | DNS and NTP and [Lab 2] (https://github.com/ycoady/UVic-Distributed-Systems/tree/master/LAB2)      | Read [Logical Clocks](http://web.stanford.edu/class/cs240/readings/lamport.pdf) and [Distributed Snapshots](http://research.microsoft.com/en-us/um/people/lamport/pubs/chandy.pdf)
 Jan 22  | Intro to Logical Clocks       | Post comments on Logical Clocks
-Jan 26  | Intro GEE (Rick)              | Post comments on Distributed Snapshots, Read [Two Phase Commit (Chapter 7, up to 7.5) ](http://research.microsoft.com/en-us/people/philbe/chapter7.pdf)
+Jan 26  | Intro GEE (Rick) and [Lab 3] (https://github.com/ycoady/UVic-Distributed-Systems/tree/master/LAB3)            | Post comments on Distributed Snapshots, Read [Two Phase Commit (Chapter 7, up to 7.5) ](http://research.microsoft.com/en-us/people/philbe/chapter7.pdf)
 Jan 29  | Overlay Networks (Rick)       | Update on [Portal Crash] (https://github.com/ycoady/UVic-Distributed-Systems/blob/master/PortalCrashUpdate.md)
+Feb 2  | Distributed Snapshots and Intro to [Lab 4] (https://github.com/ycoady/UVic-Distributed-Systems/tree/master/LAB4) | Check out the [BitTorrent Protocol] (http://www.bittorrent.org/beps/bep_0003.html)
