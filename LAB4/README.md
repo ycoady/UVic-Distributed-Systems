@@ -32,4 +32,4 @@ A report showing:
 
 The model solution that we had had about five lines of code in each of these; as before, not a lot of programming in this lab.  The goal is to learn about the infrastructure and conducting experiments!
 
-Step by Step details are [here!] (https://docs.google.com/document/d/1Ay1MAFBqnlKEZNB8DkzTnc1YcO4747plA4XIubPvOzo/edit?usp=sharing)
+Step by Step details are [here!] (https://docs.google.com/document/d/1qyXj94BPk-SwQmTlVwnb0lyLIrLny-Z2o5g_P3UDHhs/edit?usp=sharing)
