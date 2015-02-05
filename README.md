@@ -15,4 +15,5 @@ Jan 19  | DNS and NTP and [Lab 2] (https://github.com/ycoady/UVic-Distributed-Sy
 Jan 22  | Intro to Logical Clocks       | Post comments on Logical Clocks
 Jan 26  | Intro GEE (Rick) and [Lab 3] (https://github.com/ycoady/UVic-Distributed-Systems/tree/master/LAB3)            | Post comments on Distributed Snapshots, Read [Two Phase Commit (Chapter 7, up to 7.5) ](http://research.microsoft.com/en-us/people/philbe/chapter7.pdf)
 Jan 29  | Overlay Networks (Rick)       | Update on [Portal Crash] (https://github.com/ycoady/UVic-Distributed-Systems/blob/master/PortalCrashUpdate.md)
-Feb 2  | Distributed Snapshots and Intro to [Lab 4] (https://github.com/ycoady/UVic-Distributed-Systems/tree/master/LAB4) | Check out the [BitTorrent Protocol] (http://www.bittorrent.org/beps/bep_0003.html)
+Feb 2  | Microsoft (Rob) | Intro to [Lab 4] (https://github.com/ycoady/UVic-Distributed-Systems/tree/master/LAB4) and Check out the [BitTorrent Protocol] (http://www.bittorrent.org/beps/bep_0003.html)
+Feb 5  | Distributed Snapshots and Projects |  What questions are you able to address on this checklist (http://monkey.org/~marius/checklist.pdf)?
