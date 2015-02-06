@@ -17,3 +17,4 @@ Jan 26  | Intro GEE (Rick) and [Lab 3] (https://github.com/ycoady/UVic-Distribut
 Jan 29  | Overlay Networks (Rick)       | Update on [Portal Crash] (https://github.com/ycoady/UVic-Distributed-Systems/blob/master/PortalCrashUpdate.md)
 Feb 2  | Microsoft (Rob) | Intro to [Lab 4] (https://github.com/ycoady/UVic-Distributed-Systems/tree/master/LAB4) and Check out the [BitTorrent Protocol] (http://www.bittorrent.org/beps/bep_0003.html)
 Feb 5  | Distributed Snapshots and Projects |  What questions are you able to address on this [checklist] (http://monkey.org/~marius/checklist.pdf)?
+Feb 9/12  | Happy Family Day and Reading Week! |  This classic paper (particularly the lattice!) clarifies issues involving [Consistent Global States] (http://www.eecs.harvard.edu/cs262/Readings/babaoglu93consistent.pdf)
