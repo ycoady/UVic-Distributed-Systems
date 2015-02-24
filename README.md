@@ -20,6 +20,6 @@ Feb 5  | Distributed Snapshots and Projects |  What questions are you able to ad
 Feb 9/12  | Happy Family Day and Reading Week! |  This classic paper (particularly the lattice!) clarifies issues involving [Consistent Global States] (http://www.eecs.harvard.edu/cs262/Readings/babaoglu93consistent.pdf)
 Feb 16/19  | Projects and Midterm! |  This on the CAP Theorem [retrospective] (http://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed) helps in understanding how distributed systems have evolved!  
 Feb 23 | Project 2 ideas! |  GEE this is [terrific!]()
-Feb 26 | Peter from Heroku | Post any questions on forum!
-Mar 2 |  Project Presentations: Part I |  10 minutes, can use laptop/blackboard!
-Mar 5 |  Project Presentations: Part II |  10 minutes, can use laptop/blackboard!
+Feb 26 | Peter from Heroku | Post any questions on forum!  He will ask you about the CAP Theorum! 
+Mar 2 |  Project Presentations: Part I |  10 minutes, can use laptop/blackboard, be ready to ask questions!
+Mar 5 |  Project Presentations: Part II |  10 minutes, can use laptop/blackboard, be ready to ask quesitons!
