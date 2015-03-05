@@ -6,6 +6,7 @@ PART 1 (WARM UP):
 1. Login to a westgrid cluster (see below PART 2).
 2. Upload mpi_test.c, mpi_mmul.c and mpilab.pbs
 	mpicc -o mpitest mpitest.c
+	
 3. Compile mpi_test.c and run it using PBS (mpilab.pbs) on 4 nodes.
 
 
