@@ -61,12 +61,12 @@ USEFUL LINKS
  http://www.mpich.org/static/docs/v3.1/
 
  API CALLS YOU WILL NEED:
-    MPI_Init
-    MPI_Comm_size
-    MPI_Comm_rank
-    MPI_Bcast
-    MPI_Gather
-    MPI_Finalize
+   - MPI_Init
+   - MPI_Comm_size
+   - MPI_Comm_rank
+   - MPI_Bcast
+   - MPI_Gather
+   - MPI_Finalize
 
 
 GENERAL PROCEDURE OF RUNNING MPI PROGRAMS ON WESTGRID
