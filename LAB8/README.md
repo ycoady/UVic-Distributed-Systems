@@ -5,11 +5,9 @@ PART 1 (WARM UP):
 =================
 1. Login to a westgrid cluster (see below PART 2).
 2. Upload mpi_test.c, mpi_mmul.c and mpilab.pbs
-
-mpicc -o mpitest mpitest.c
-	
 3. Compile mpi_test.c and run it using PBS (mpilab.pbs) on 4 nodes.
 
+    mpicc -o mpitest mpitest.c
 
 PART 2 (MATRIX MULTIPLICATION):
 ===============================
@@ -24,8 +22,8 @@ Can we do better than the naive implementation?
 compile mpi_mmul.c as non-MPI-program and then running the 
 sanity_check() function: 
 
-gcc mpi_mmul.c -o mpi_mmul
-./mpi_mmul
+    gcc mpi_mmul.c -o mpi_mmul
+    ./mpi_mmul
 
 3. Modify mpi_mmul.c to run as an MPI program that partitions, and distributes the work to multiply the matrices A and B among the number of nodes you specified when submitting your job to the PBS system.
 
@@ -41,7 +39,9 @@ NPROC = {32, 16, 8, 4, 2, 1}
 AVAILABLE WESTGRID SYSTEMS WITH MPI INSTALLED
 =============================================
  UVIC:       hermes.westgrid.ca / nestor.westgrid.ca
+ 
  SFU:        bugaboo.westgrid.ca
+ 
  U. ALBERTA: jasper.westgrid.ca
  
  LOGIN:
