@@ -3,10 +3,9 @@ LAB #8 TASKS:
 
 PART 1 (WARM UP):
 =================
-1. Login to a westgrid cluster (see below PART 2)
-
+1. Login to a westgrid cluster (see below PART 2).
 2. Upload mpi_test.c, mpi_mmul.c and mpilab.pbs
-
+	mpicc -o mpitest mpitest.c
 3. Compile mpi_test.c and run it using PBS (mpilab.pbs) on 4 nodes.
 
 
@@ -26,35 +25,13 @@ sanity_check() function:
 gcc mpi_mmul.c -o mpi_mmul
 ./mpi_mmul
 
-gives:
-A:
-  0.00	  1.00	  2.00	
-  1.00	  2.00	  3.00	
-  2.00	  3.00	  4.00	
+3. Modify mpi_mmul.c to run as an MPI program that partitions, and distributes the work to multiply the matrices A and B among the number of nodes you specified when submitting your job to the PBS system.
 
-B:
-  0.00	 -1.00	 -2.00	
-  1.00	  0.00	 -1.00	
-  2.00	  1.00	  0.00	
-
-C = A*B:
-  5.00	  2.00	 -1.00	
-  8.00	  2.00	 -4.00	
- 11.00	  2.00	 -7.00
-
-3. Modify mpi_mmul.c to run as an MPI program that partitions,
-and distributes the work to multiply the matrices A and B among
-the number of nodes you specified when submitting your job to 
-the PBS system.
-
-4. Record the running time of your MPI program when setting 
-the matrix size to NxN=4096x4096 and using the following number of 
-MPI processes:
+4. Record the running time of your MPI program when setting the matrix size to NxN=4096x4096 and using the following number of MPI processes:
 NPROC = {32, 16, 8, 4, 2, 1}
 
-5. Calculate and plot the speedup as a function of used 
-parallel MPI processes.
-Speedup is defined as: 
+5. Calculate and plot the speedup as a function of used parallel MPI processes. Speedup is defined as:
+ 
 (time req. for serial run)/(time req. for parallel run)
  
 
@@ -94,7 +71,7 @@ GENERAL PROCEDURE OF RUNNING MPI PROGRAMS ON WESTGRID
 =====================================================
 1. Compile your MPI program:
 	mpicc mpi_test.c -o mpi_test
-	
+		
 3. Run a PBS script to submit a batch job to a westgrid cluster.
 The preferred way of starting MPI programs on westgrid is mpiexec. The main advantage of using mpiexec over mpirun is that there is no need to source any setup files before executing your program. The example MPI program mpi_test.c could be executed with the PBS script contained with this lab as follows
 
