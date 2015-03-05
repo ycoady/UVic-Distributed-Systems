@@ -1,0 +1,31 @@
+#!/bin/bash
+#PBS -S /bin/bash
+
+# Sample script for running an MPI-based parallel program
+cd $PBS_O_WORKDIR
+echo "Current working directory is `pwd`"
+
+echo "Node file: $PBS_NODEFILE :"
+echo "---------------------"
+cat $PBS_NODEFILE
+echo "---------------------"
+
+# On many WestGrid systems a variable PBS_NP is automatically
+# assigned the number of cores requested of the batch system
+# and one could use
+# echo "Running on $PBS_NP cores."
+# On systems where $PBS_NP is not available, one could use:
+
+CORES=`/bin/awk 'END {print NR}' $PBS_NODEFILE`
+echo "Running on $CORES cores."
+
+echo "Starting run at: `date`"
+
+# On most WestGrid systems, mpiexec will automatically start
+# a number of MPI processes equal to the number of cores
+# requested. The -n arugment can be used to explicitly
+# use a specific number of cores.
+
+mpiexec -n ${CORES} ./mpi_test
+#mpiexec -n ${CORES} ./mpi_mmul
+echo "Program finished with exit code $? at: `date`"
