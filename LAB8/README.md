@@ -61,25 +61,25 @@ USEFUL LINKS
  http://www.mpich.org/static/docs/v3.1/
 
  API CALLS YOU WILL NEED:
-  MPI_Init
-  MPI_Comm_size
-  MPI_Comm_rank
-  MPI_Bcast
-  MPI_Gather
-  MPI_Finalize
+    MPI_Init
+    MPI_Comm_size
+    MPI_Comm_rank
+    MPI_Bcast
+    MPI_Gather
+    MPI_Finalize
 
 
 GENERAL PROCEDURE OF RUNNING MPI PROGRAMS ON WESTGRID
 =====================================================
-1. Compile your MPI program:
-	mpicc mpi_test.c -o mpi_test
+1. Compile your MPI program
+    mpicc mpi_test.c -o mpi_test
 		
 2. Run a PBS script to submit a batch job to a westgrid cluster.
-The preferred way of starting MPI programs on westgrid is mpiexec. The main advantage of using mpiexec over mpirun is that there is no need to source any setup files before executing your program. The example MPI program mpi_test.c could be executed with the PBS script contained with this lab as follows
+	The preferred way of starting MPI programs on westgrid is mpiexec. The main advantage of using mpiexec over mpirun is that there is no need to source any setup files before executing your program. The example MPI program mpi_test.c could be executed with the PBS script contained with this lab as follows
 
 	qsub -l procs=16,pmem=1gb,walltime=1:00:00 mpilab.pbs
 
-in which 16 processors are requested (procs parameter), using at most 1 GB of memory per process (pmem parameter) and running for at most 1 hour (walltime parameter) (see https://www.westgrid.ca/support/running_jobs for more details).
+	in which 16 processors are requested (procs parameter), using at most 1 GB of memory per process (pmem parameter) and running for at most 1 hour (walltime parameter) (see https://www.westgrid.ca/support/running_jobs for more details).
 
 3. Check your MPI program output:
-The output files for the job are created in the same directory where the qsub command was executed. The output files are created using the same filename as your PBS script filename with an extension that includes "e" for "error" or "o" for "output" followed by the process number.
+	The output files for the job are created in the same directory where the qsub command was executed. The output files are created using the same filename as your PBS script filename with an extension that includes "e" for "error" or "o" for "output" followed by the process number.
