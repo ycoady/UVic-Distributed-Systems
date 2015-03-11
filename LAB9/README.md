@@ -9,12 +9,12 @@
 
 2. Create key pair (EC2 Dashboard)
 
-	-If you access EC2 from Linux change permission on key
+	If you access EC2 from Linux change permission on key
 	<pre class="command-line">
 		chmod 400 mykey.pem 
 	</pre>
 	
-	- If you access EC2 from Windows using putty you will have to convert your key from *.pem to *.ppk using puttygen, see here:
+	 If you access EC2 from Windows using putty you will have to convert your key from *.pem to *.ppk using puttygen, see here:
 	
 	http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#prepare-for-putty
 
@@ -25,19 +25,22 @@
 	Allow Inbound: HTTP/HTTPS/SSH
 
 5. Launch AMI Instance (EC2 Dashboard)
-	-Check tick 'Free tier only' check box.
-	-Choose Amazon Linux AMI 2014.09.2 (HVM)
-	-Filter for 'Micro Instances' in next dialog (t2.micro)
-	-Edit Security Group
+	*Check tick 'Free tier only' check box.
+	*Choose Amazon Linux AMI 2014.09.2 (HVM)
+	*Filter for 'Micro Instances' in next dialog (t2.micro)
+	*Edit Security Group
 
 6. Connect to your Micro AWS Instance
-	-Use ssh with the key you generated/downloaded earlier.
+	
+	Use ssh with the key you generated/downloaded earlier.
+	
 	<pre class="command-line">
 		ssh -i mykey.pem ec2-user@[machine IP]
 	</pre>
 
 7. TERMINATE YOUR INSTANCE
-	-<b>DO IT!!!!! PLEASE!!!!!!</b>
+
+	<b>DO IT!!!!! PLEASE!!!!!!</b>
 
 ## Install basic and required packages
 
