@@ -1,4 +1,4 @@
-# Installing Flask, AbeBook's Scrunch on Amazon EC2
+# Installing AbeBook's Scrunch on Amazon EC2
 
 ## Get an Amazon Web Services Account
 1. Get an account here:
@@ -25,10 +25,14 @@
 	Allow Inbound: HTTP/HTTPS/SSH
 
 5. Launch AMI Instance (EC2 Dashboard)
-	*Check tick 'Free tier only' check box.
-	*Choose Amazon Linux AMI 2014.09.2 (HVM)
-	*Filter for 'Micro Instances' in next dialog (t2.micro)
-	*Edit Security Group
+	
+	Check tick 'Free tier only' check box.
+	
+	Choose Amazon Linux AMI 2014.09.2 (HVM)
+	
+	Filter for 'Micro Instances' in next dialog (t2.micro)
+	
+	Edit Security Group
 
 6. Connect to your Micro AWS Instance
 	
@@ -89,7 +93,7 @@ Then, start your Web server
 service nginx start
 </pre>
 
-## Create 'Hello, World' program
+## Create your first 'Hello, World' Flask program
 
 In your project folder create your first python app.
 
@@ -144,7 +148,7 @@ And, because our config specify that uWSGI processes are executed as daemon, if 
 <pre class="command-line">kill -INT `cat /tmp/uwsgi.pid`</pre>
 
 ## Installing AbeBook's Scrunch
-Now that you have a running <i>Flask/nginx</i> environment, adapt the code from AbeBook's Scrunch Server to work on your machine such that it will use a database to store the shortened URLs (you may use sqlite as a basic key value store or get fancier and make your key value store distributed using additional AWS instances ).
+Now that you have a running <i>Flask/nginx</i> environment, adapt the code from AbeBook's Scrunch Server to work on your machine such that it will use a database to store the shortened URLs (you may use <i>sqlite</i> as a basic key value store or get fancier and make your key value store distributed using additional AWS instances ).
 
 Get code for scrunch here:
 
@@ -155,5 +159,5 @@ wget http://www.scrunch.ca/static/scrunch-code.zip
 </pre>
 
 ## Shut down your running AWS instances!
-- In the EC2 Dashboard click 'Running Instances' and right click on your instance in the leist and select 'Instance State' > 'Terminate'.
+- In the EC2 Dashboard click 'Running Instances' and right click on your instance in the list and select 'Instance State' > 'Terminate'.
 
