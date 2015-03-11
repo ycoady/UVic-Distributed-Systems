@@ -3,15 +3,17 @@
 ## Get an Amazon Web Services Account
 1. Get an account here:
 
-http://aws.amazon.com
-
-You will need a Amazon Account/Credit Card & Cell phone to verify your account.
+	http://aws.amazon.com
+	
+	(you will need a Amazon Account/Credit Card & Cell phone to verify your account)
 
 2. Create key pair (EC2 Dashboard)
+
 	-If you access EC2 from Linux change permission on key
 	<pre class="command-line">
 		chmod 400 mykey.pem 
 	</pre>
+	
 	- If you access EC2 from Windows using putty you will have to convert your key from *.pem to *.ppk using puttygen, see here:
 	
 	http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#prepare-for-putty
