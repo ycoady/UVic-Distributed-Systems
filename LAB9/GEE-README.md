@@ -112,7 +112,7 @@ uwsgi --yaml app.yaml
 ## Setup SSH tunnel forwarding traffic to the GEE nginx server:
 
 <pre class="command-line">
-ssh -L 8080:localhost:80 -i id_rsa -F ssh-config slice343.pcvm3-1.instageni.stanford.edu -N
+ssh -L 8080:localhost:80 -i id_rsa -F ssh-config [your slice url] -N
 </pre>
 
 ## Access your Scrunch server from your local browser:
