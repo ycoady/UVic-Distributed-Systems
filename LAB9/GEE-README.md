@@ -1,6 +1,6 @@
-## Getting AbeBook's Scrunch Server running on GEE
+# Getting AbeBook's Scrunch Server running on GEE
 
-# Log into GEE and run...
+## Log into GEE and run...
 
 <pre class="command-line">
 apt-get update
@@ -12,7 +12,7 @@ apt-get install -y unzip
 apt-get install -y uwsgi uwsgi-plugin-python
 </pre>
 
-# Prepare Web server directory and install dependencies:
+## Prepare Web server directory and install dependencies:
 
 <pre class="command-line">
 cd /root
@@ -25,14 +25,14 @@ pip install -r requirements/prod.txt
 pip install -r requirements/dev.txt
 </pre>
 
-# Install nginx:
+## Install nginx:
 
 <pre class="command-line">
 apt-get install -y  nginx-full
 rm /etc/nginx/sites-enabled/default
 </pre>
 
-# Make nginx config file:
+## Make nginx config file:
 
 <pre class="command-line">
 vi /etc/nginx/sites-enabled/scrunch
@@ -59,13 +59,13 @@ server {
 </pre>
 
 
-# Restart nginx:
+## Restart nginx:
 
 <pre class="command-line">
 service nginx restart
 </pre>
 
-# Make 'Hello World' program:
+## Make 'Hello World' program:
 
 <pre class="command-line">
 cd /root/www
@@ -84,7 +84,7 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0')
 </pre>
 
-# Make  uWSGI configuration yaml script:
+## Make  uWSGI configuration yaml script:
 
 <pre class="command-line">
 vi app.yaml
@@ -103,19 +103,19 @@ uwsgi:
   module: hello:app
 </pre>
 
-# Start up 'Hello world' program:
+## Start up 'Hello world' program:
 
 <pre class="command-line">
 uwsgi --yaml app.yaml
 </pre>
 
-# Setup SSH tunnel forwarding traffic to the GEE nginx server:
+## Setup SSH tunnel forwarding traffic to the GEE nginx server:
 
 <pre class="command-line">
 ssh -L 8080:localhost:80 -i id_rsa -F ssh-config slice343.pcvm3-1.instageni.stanford.edu -N
 </pre>
 
-# Access your Scrunch server from your local browser:
+## Access your Scrunch server from your local browser:
 
 <pre class="command-line">
 http://localhost:8080
