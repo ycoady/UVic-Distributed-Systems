@@ -21,9 +21,9 @@ Feb 9/12  | Happy Family Day and Reading Week! |  This classic paper (particular
 Feb 16/19  | Projects and Midterm! |  This on the CAP Theorem [retrospective] (http://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed) helps in understanding how distributed systems have evolved!  
 Feb 23 | Project 2 ideas! |  GEE this is [terrific!]()
 Feb 26 | Peter from Heroku | Post any questions on forum!  He will ask you about the CAP Theorum! 
-Mar 2 ! Abebooks Scrunch Part 1 |  Meet in ECS 660
+Mar 2 | Abebooks Scrunch Part1 |  Meet in ECS 660
 Mar 5/9/12 |  Project Presentations! |  10 minutes, can use laptop/blackboard, be ready to ask questions!
-Mar 16 | Abebooks Scrunch Part 2 | Meet in ECS 660
+Mar 16 | Abebooks Scrunch Part2 | Meet in ECS 660
 Mar 26 | Midterm |
 Mar 30 | Final Scrunch | Meet in ECS 660
 Apr 2 |  Project Presentations | Final wrap up!
