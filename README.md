@@ -24,6 +24,7 @@ Feb 26 | Peter from Heroku | Post any questions on forum!  He will ask you about
 Mar 2 | Abebooks Scrunch Part1 |  Meet in ECS 660
 Mar 5/9/12 |  Project Presentations! |  10 minutes, can use laptop/blackboard, be ready to ask questions!
 Mar 16 | Abebooks Scrunch Part2 | Meet in ECS 660
+Mar 19 | Do incentives work? | Read [BitTyrant](http://sing.stanford.edu/cs303-sp11/papers/BitTyrant.pdf) for Monday
 Mar 26 | Midterm |
-Mar 30 | Final Scrunch | Meet in ECS 660
+Mar 30 | Final Scrunch! | Meet in ECS 660
 Apr 2 |  Project Presentations | Final wrap up!
